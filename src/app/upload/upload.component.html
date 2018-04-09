@@ -1,0 +1,155 @@
+<div class="container">
+  <h2 class="heading">Upload New Images</h2>
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Jahr aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="enable2018()">2018</a></li>
+      <li><a (click)="enable2017()">2017</a></li>
+      <li><a (click)="enable2016()">2016</a></li>
+      <li><a (click)="enable2015()">2015</a></li>
+      <li><a (click)="enable2014()">2014</a></li>
+      <li><a (click)="enable2013()">2013</a></li>
+      <li><a (click)="enable2012()">2012</a></li>
+      <li><a (click)="enable2011()">2011</a></li>
+      <li><a (click)="enable2010()">2010</a></li>
+      <li><a (click)="enable2009()">2009</a></li>
+      <li><a (click)="enable2008()">2008</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2018 -->
+  <div *ngIf="is2018" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a>Keine Events 2018</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2017 -->
+  <div *ngIf="is2017" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a>Keine Events 2017</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2016 -->
+  <div *ngIf="is2016" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a>Keine Events 2016</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2015 -->
+  <div *ngIf="is2015" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a>Keine Events 2015</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2014 -->
+  <div *ngIf="is2014" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="changeComponent('hvstraßwalchen')">50 Jahre HV Straßwalchen</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2013 -->
+  <div *ngIf="is2013" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a>Keine Events 2013</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2012 -->
+  <div *ngIf="is2012" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="changeEvent('kathreintanz')">Eglseer Kathreintanz</a></li>
+      <li><a (click)="changeEvent('daenenabend')">Dänenabend</a></li>
+      <li><a (click)="changeEvent('volkstaenzertag')">Volkstänzertag Thalgau</a></li>
+      <li><a (click)="changeEvent('ausflug')">Eglseer Ausflug</a></li>
+      <li><a (click)="changeEvent('maibaum')">Maibaumsetzen</a></li>
+      <li><a (click)="changeEvent('jhv')">Jahreshauptversammlung</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2011 -->
+  <div *ngIf="is2011" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="changeEvent('kathreintanz')">Eglseer Kathreintanz</a></li>
+      <li><a (click)="changeEvent('brauchtumstag')">Brauchtumstag</a></li>
+      <li><a (click)="changeEvent('ferienkalender')">Ferienkalender</a></li>
+      <li><a (click)="changeEvent('sonnwendfeuer')">Sonnwendfeuer Ramingstein</a></li>
+      <li><a (click)="changeEvent('fruehschoppen')">Frühschoppen zum 40-jährigen Jubiläum</a></li>
+      <li><a (click)="changeEvent('jugendtanzt')">Jugend tanzt</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2010 -->
+  <div *ngIf="is2010" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="changeEvent('kathreintanz')">Eglseer Kathreintanz</a></li>
+      <li><a (click)="changeEvent('brauchtumstag')">Brauchtumstag</a></li>
+      <li><a (click)="changeEvent('maibaum')">Maibaumsetzen</a></li>
+      <li><a (click)="changeEvent('tanzindenmai')">Tanz in den Mai</a></li>
+      <li><a (click)="changeEvent('ausflug')">Eglseer Ausflug</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2009 -->
+  <div *ngIf="is2009" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="changeEvent('jhv')">Jahreshauptversammlung</a></li>
+      <li><a (click)="changeEvent('festdervolkskulturen')">Fest der Volkskulturen</a></li>
+      <li><a (click)="changeEvent('brauchtumstag')">Brauchtumstag</a></li>
+      <li><a (click)="changeEvent('kathreintanz')">Eglseer Kathreintanz</a></li>
+      <li><a (click)="changeEvent('alpenlaender')">Alpenländischer Advent</a></li>
+      <li><a (click)="changeEvent('maibaum')">Maibaumsetzen</a></li>
+    </ul><br><br>
+  </div>
+
+  <!-- 2008 -->
+  <div *ngIf="is2008" class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Event aussuchen
+  <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a (click)="changeEvent('weihnachtsfeier')">Weihnachtsfeier</a></li>
+    </ul><br><br>
+  </div>
+
+  <h4>Selektiertes Jahr: {{selectedYear}}</h4>
+  <h4>Selektiertes Event: {{selectedEvent}}</h4>
+
+  <input type="file" (change)="handleImages($event)" multiple><br>
+  <button class="btn btn-primary" (click)="uploadImages()">Upload Images</button>
+  <br><br>
+  <alert type="info">
+    {{globals.imageInfoText}}
+  </alert>
+  <br>
+  <div *ngIf="upload">
+    <div class="progress">
+      <div class="progress-bar progress-bar-animated" [ngStyle]="{ 'width': upload?.progress + '%' }"></div>
+    </div>
+    Progress: {{upload?.progress}}% Complete
+  </div>
+</div>

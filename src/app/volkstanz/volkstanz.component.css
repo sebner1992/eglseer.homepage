@@ -1,0 +1,9 @@
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

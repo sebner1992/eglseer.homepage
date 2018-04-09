@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <h1>Tänzer</h1>
+      <div *ngFor="let taenzer of taenzer" class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="{{taenzer.imgUrl}}" alt="...">
+          <div class="caption">
+            <p>Name: {{taenzer.name}}</p>
+            <p>Funktionen: {{taenzer.function}}</p>
+            <p>Aktiv seit: {{taenzer.activeSince}}</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Ehrenmitglieder</h1>
+      <div *ngFor="let ehrenmitglied of ehrenmitglieder" class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ehrenmitglied.imgUrl}}" alt="...">
+          <div class="caption">
+            <p>Name: {{ehrenmitglied.name}}</p>
+            <p>Funktionen: {{ehrenmitglied.function}}</p>
+            <p>Aktiv seit: {{ehrenmitglied.activeSince}}</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Eglseer</h1>
+      <div *ngFor="let eglseer of eglseer" class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="{{eglseer.imgUrl}}" alt="...">
+          <div class="caption">
+            <p>Name: {{eglseer.name}}</p>
+            <p>Funktionen: {{eglseer.function}}</p>
+            <p>Aktiv seit: {{eglseer.activeSince}}</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Tanzlmusi</h1>
+      <div *ngFor="let tanzlmusi of tanzlmusi" class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="{{tanzlmusi.imgUrl}}" alt="...">
+          <div class="caption">
+            <p>Name: {{tanzlmusi.name}}</p>
+            <p>Funktionen: {{tanzlmusi.function}}</p>
+            <p>Aktiv seit: {{tanzlmusi.activeSince}}</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
