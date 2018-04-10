@@ -37,7 +37,6 @@ export class UploadService {
       (): any => {
         upload.url = uploadTask.snapshot.downloadURL;
         upload.name = upload.file.name;
-        this.filenames.push(upload.name);
         if (this.saveFileData(upload, comp)) {
           this.globals.setImageInfoText("Image uploaded!");
         }
@@ -49,14 +48,7 @@ export class UploadService {
   }
 
   private saveFileData(upload: Upload, comp: String) {
-    for (var i = 0; i < this.filenames.length; i++) {
-      if (this.filenames[i] !== upload.name) {
-        this.db.list(`${comp}/`).push(upload);
-        return true;
-      }
-      else {
-        return false;
-      }
-    }
+    this.db.list(`${comp}/`).push(upload);
+    return true;
   }
 }

@@ -163,6 +163,46 @@ export class GalleryComponent {
         break;
       case "daenenabend": this.caruselTitle = "Dänenabend " + this.selectedYear;
         break;
+      case "gebroland": this.caruselTitle = "Geburtstag Roland Kerschbaum " + this.selectedYear;
+        break;
+      case "gebgitti": this.caruselTitle = "Geburtstag Gitti Jischa " + this.selectedYear;
+        break;
+      case "erntedank": this.caruselTitle = "Erntedank " + this.selectedYear;
+        break;
+      case "fasching": this.caruselTitle = "Fasching " + this.selectedYear;
+        break;
+      case "feuerwehrfest": this.caruselTitle = "Feuerwehrfest " + this.selectedYear;
+        break;
+      case "grillen": this.caruselTitle = "Eglseer Grillen " + this.selectedYear;
+        break;
+      case "hoagascht": this.caruselTitle = "Hoagascht " + this.selectedYear;
+        break;
+      case "hochzeit": this.caruselTitle = "Eglseer Hochzeit " + this.selectedYear;
+        break;
+      case "flachgheim": this.caruselTitle = "Jahrestag der Flachgauer Heimatvereine " + this.selectedYear;
+        break;
+      case "orfgutenmorgen": this.caruselTitle = "ORF Guten Morgen " + this.selectedYear;
+        break;
+      case "erntedankaigen": this.caruselTitle = "Erntedank Aigen " + this.selectedYear;
+        break;
+      case "erntedankelsb": this.caruselTitle = "Erntedank Elsbethen " + this.selectedYear;
+        break;
+      case "stockturnierelsb": this.caruselTitle = "Stockturnier Elsbethen " + this.selectedYear;
+        break;
+      case "stockturnierstrawa": this.caruselTitle = "Stockturnier Straßwalchen " + this.selectedYear;
+        break;
+      case "tanzkurs": this.caruselTitle = "Tanzkurs " + this.selectedYear;
+        break;
+      case "festtage": this.caruselTitle = "Eglseer Festtage " + this.selectedYear;
+        break;
+        case "gebbgm": this.caruselTitle = "Geburtstag Bgm. Franz Tiefenbacher " + this.selectedYear;
+        break;
+        case "kindertanz": this.caruselTitle = "Kindertanzen " + this.selectedYear;
+        break;
+        case "tanzumdenbrunnen": this.caruselTitle = "Tanz um den Brunnen " + this.selectedYear;
+        break;
+        case "voixtonz": this.caruselTitle = "VoixTonzTog " + this.selectedYear;
+        break;
     }
   }
 }
