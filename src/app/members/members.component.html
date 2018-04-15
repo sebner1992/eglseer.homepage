@@ -15,6 +15,34 @@
       </div>
     </div>
     <div class="row">
+      <h1>In Ausbildung</h1>
+      <div *ngFor="let ausbildung of ausbildung" class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="{{ausbildung.imgUrl}}" alt="...">
+          <div class="caption">
+            <p>Name: {{ausbildung.name}}</p>
+            <p>Funktionen: {{ausbildung.function}}</p>
+            <p>Aktiv seit: {{ausbildung.activeSince}}</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <h1> Tanzkreis</h1>
+      <div *ngFor="let tanzkreis of tanzkreis" class="col-sm-4 col-md-4">
+        <div class="thumbnail">
+          <img src="{{tanzkreis.imgUrl}}" alt="...">
+          <div class="caption">
+            <p>Name: {{tanzkreis.name}}</p>
+            <p>Funktionen: {{tanzkreis.function}}</p>
+            <p>Aktiv seit: {{tanzkreis.activeSince}}</p>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
       <h1>Ehrenmitglieder</h1>
       <div *ngFor="let ehrenmitglied of ehrenmitglieder" class="col-sm-4 col-md-4">
         <div class="thumbnail">
