@@ -18,18 +18,12 @@ import { SonstigesComponent } from './app/sonstiges/sonstiges.component';
 import { BraeucheComponent } from './app/braeuche/braeuche.component';
 import { TrachtComponent } from './app/tracht/tracht.component';
 import { ChronikComponent } from './app/chronik/chronik.component';
-import { AlpenlaenderComponent } from './app/alpenlaender/alpenlaender.component';
-import { BrunoagatheComponent } from './app/brunoagathe/brunoagathe.component';
-import { KinderprojekteComponent } from './app/kinderprojekte/kinderprojekte.component';
 import { JugendtanztComponent } from './app/jugendtanzt/jugendtanzt.component';
 
 export const appRoutes: Routes = [
     { path: 'braeuche', component: BraeucheComponent },
     { path: 'tracht', component: TrachtComponent },
     { path: 'chronik', component: ChronikComponent },
-    { path: 'alpenlaender', component: AlpenlaenderComponent },
-    { path: 'brunoagathe', component: BrunoagatheComponent },
-    { path: 'kinderprojekte', component: KinderprojekteComponent },
     { path: 'jugendtanzt', component: JugendtanztComponent },
     { path: 'home', component: HomeComponent },
     { path: 'sonstiges', component: SonstigesComponent },

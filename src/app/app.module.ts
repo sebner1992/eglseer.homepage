@@ -39,9 +39,6 @@ import { SonstigesComponent } from './sonstiges/sonstiges.component';
 import { BraeucheComponent } from './braeuche/braeuche.component';
 import { TrachtComponent } from './tracht/tracht.component';
 import { ChronikComponent } from './chronik/chronik.component';
-import { AlpenlaenderComponent } from './alpenlaender/alpenlaender.component';
-import { BrunoagatheComponent } from './brunoagathe/brunoagathe.component';
-import { KinderprojekteComponent } from './kinderprojekte/kinderprojekte.component';
 import { JugendtanztComponent } from './jugendtanzt/jugendtanzt.component';
 
 
@@ -67,9 +64,6 @@ import { JugendtanztComponent } from './jugendtanzt/jugendtanzt.component';
     BraeucheComponent,
     TrachtComponent,
     ChronikComponent,
-    AlpenlaenderComponent,
-    BrunoagatheComponent,
-    KinderprojekteComponent,
     JugendtanztComponent
   ],
   imports: [
