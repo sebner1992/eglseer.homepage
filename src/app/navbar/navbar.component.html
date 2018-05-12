@@ -13,6 +13,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li><a routerLink="/news">Aktuelles</a></li>
         <li><a routerLink="/home">Dahoam</a></li>
         <li><a routerLink="/termine">Termine</a></li>
         <li><a routerLink="/gallery">Bildergalerie</a></li>
@@ -20,6 +21,7 @@
         <li><a routerLink="/volkstanz">Volkstanz</a></li>
         <li><a routerLink="/plattler">Plattler</a></li>
         <li><a routerLink="/sonstiges">Sonstiges</a></li>
+        <li><a href="https://www.facebook.com/BrauchtumsgruppeEglseer/" target="_blank"><img src="assets/facebook2.png" style="height: 20px;"></a></li>
         <li *ngIf="(user|async)?.uid"><a routerLink="/upload">Upload</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

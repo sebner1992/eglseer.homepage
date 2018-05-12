@@ -48,7 +48,7 @@ export class MembersComponent implements OnInit, OnChanges {
     this.ausbildung = [
       { name: 'Winhart Jacqueline', imgUrl: 'assets/mitglieder/ausbildung/jacqui.jpg', function: 'Tänzerin', activeSince: '2018', instrument: '' },
       { name: 'Herbst Thomas', imgUrl: 'assets/mitglieder/ausbildung/thomas_h.jpg', function: 'Tänzer', activeSince: '2018', instrument: '' },
-      { name: 'Herbst Christina', imgUrl: 'assets/mitglieder/placeholder.jpg', function: 'Tänzerin', activeSince: '2017', instrument: '' },
+      { name: 'Herbst Christina', imgUrl: 'assets/mitglieder/ausbildung/christina.jpg', function: 'Tänzerin', activeSince: '2017', instrument: '' },
     ];
     this.tanzkreis = [
       { name: 'Herbst Monika', imgUrl: 'assets/mitglieder/taenzer/monika.jpg', function: 'Tänzerin', activeSince: '1976', instrument: '' },
@@ -57,9 +57,9 @@ export class MembersComponent implements OnInit, OnChanges {
       { name: 'Baal Sepp', imgUrl: 'assets/mitglieder/taenzer/sepp_b.jpg', function: 'Tänzer', activeSince: '1981', instrument: '' },
       { name: 'Prähauser Andre', imgUrl: 'assets/mitglieder/taenzer/andre.jpg', function: 'Beirat, Tänzer', activeSince: '1971', instrument: '' },
       { name: 'Brunauer Jakob', imgUrl: 'assets/mitglieder/placeholder.jpg', function: 'Tänzer', activeSince: '1981', instrument: '' },
-      { name: 'Brunauer Maridi', imgUrl: 'assets/mitglieder/placeholder.jpg', function: 'Tänzerin', activeSince: '1981', instrument: '' },
+      { name: 'Brunauer Maridi', imgUrl: 'assets/mitglieder/taenzer/maridi.jpg', function: 'Tänzerin', activeSince: '1981', instrument: '' },
       { name: 'Haslauer Paul', imgUrl: 'assets/mitglieder/ehrenmitglieder/pauli.jpg', function: 'Tänzer', activeSince: '1972', instrument: '' },
-      { name: 'Haslauer Resi', imgUrl: 'assets/mitglieder/placeholder.jpg', function: 'Tänzerin', activeSince: '1972', instrument: '' },
+      { name: 'Haslauer Resi', imgUrl: 'assets/mitglieder/taenzer/resi.jpg', function: 'Tänzerin', activeSince: '1972', instrument: '' },
     ];
     this.ehrenmitglieder = [
       { name: 'Haslauer Paul', imgUrl: 'assets/mitglieder/ehrenmitglieder/pauli.jpg', function: 'Ehrenmitglied', activeSince: '1972' },

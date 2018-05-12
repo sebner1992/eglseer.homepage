@@ -40,6 +40,8 @@ import { BraeucheComponent } from './braeuche/braeuche.component';
 import { TrachtComponent } from './tracht/tracht.component';
 import { ChronikComponent } from './chronik/chronik.component';
 import { JugendtanztComponent } from './jugendtanzt/jugendtanzt.component';
+import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { NewsComponent } from './news/news.component';
 
 
 @NgModule({
@@ -64,7 +66,9 @@ import { JugendtanztComponent } from './jugendtanzt/jugendtanzt.component';
     BraeucheComponent,
     TrachtComponent,
     ChronikComponent,
-    JugendtanztComponent
+    JugendtanztComponent,
+    ImageDetailComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

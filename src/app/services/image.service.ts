@@ -11,7 +11,7 @@ import * as firebase from 'firebase';
 export class ImageService {
   private uid: string;
 
-  constructor(private afAuth: AngularFireAuth, private db: AngularFireDatabase ) {
+  constructor(private afAuth: AngularFireAuth, private db: AngularFireDatabase) {
     this.afAuth.authState.subscribe(auth => {
       if (auth !== undefined && auth !== null) {
         this.uid = auth.uid;
@@ -34,5 +34,9 @@ export class ImageService {
 
   cleanUp() {
     this.db.list('volkstanz').remove();
+  }
+
+  getImage(folder: string, key: string) {
+    return firebase.database().ref(folder + "/" + key).once('value').then((snap) => snap.value());
   }
 }

@@ -9,7 +9,7 @@ import * as firebase from 'firebase';
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent {
+export class GalleryComponent implements OnInit{
   images: Observable<GalleryImage[]>;
   is2008: boolean = false;
   is2009: boolean = false;
@@ -30,6 +30,14 @@ export class GalleryComponent {
   imageUrl: string;
   isUrlValid: boolean = false;
   caruselTitle: string = "Such dir ein Jahr und eine Veranstaltung aus!";
+
+  ngOnInit() {
+    this.selectedYear = "2018";
+    this.selectedEvent = "maibaum";
+    this.buildUrl(this.selectedYear, this.selectedEvent);
+    this.setTitle(this.selectedEvent);
+    this.images = this.imageService.getImages(this.imageUrl);
+  }
 
   buildUrl(prefix: string, suffix: string) {
     if (prefix && suffix) {

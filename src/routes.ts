@@ -19,9 +19,12 @@ import { BraeucheComponent } from './app/braeuche/braeuche.component';
 import { TrachtComponent } from './app/tracht/tracht.component';
 import { ChronikComponent } from './app/chronik/chronik.component';
 import { JugendtanztComponent } from './app/jugendtanzt/jugendtanzt.component';
+import { ImageDetailComponent} from './app/image-detail/image-detail.component';
+import { NewsComponent } from './app/news/news.component';
 
 export const appRoutes: Routes = [
     { path: 'braeuche', component: BraeucheComponent },
+    { path: 'news', component: NewsComponent },
     { path: 'tracht', component: TrachtComponent },
     { path: 'chronik', component: ChronikComponent },
     { path: 'jugendtanzt', component: JugendtanztComponent },
@@ -41,4 +44,5 @@ export const appRoutes: Routes = [
     { path: 'members', component: MembersComponent},
     { path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: 'login', component: LoginComponent},
+    { path: 'image/:id', component: ImageDetailComponent }
 ];
