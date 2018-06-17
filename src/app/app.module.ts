@@ -11,6 +11,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestore, AngularFirestoreDocument} from 'angularfire2/firestore';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 import { AppComponent } from './app.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -81,7 +82,8 @@ import { NewsComponent } from './news/news.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [
     AuthenticationGuard,

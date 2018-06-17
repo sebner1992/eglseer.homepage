@@ -1,6 +1,6 @@
 export class Appointment {
     id?: string;
-    date?: string;
+    date?: Date;
     content?: string;
     time?: string;
 }

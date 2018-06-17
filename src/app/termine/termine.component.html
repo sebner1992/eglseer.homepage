@@ -10,7 +10,7 @@
           <th *ngIf="loggedIn">Löschen</th>
         </tr>
         <tr *ngFor="let appointment of appointments">
-          <td>{{appointment.date}}</td>
+          <td>{{appointment.date | date: 'dd.MM.yyyy'}}</td>
           <td>{{appointment.content}}</td>
           <td>{{appointment.time}}</td>
           <td *ngIf="loggedIn"><button type="button" (click)="deleteItem($event, appointment)">Löschen</button></td>
@@ -22,7 +22,8 @@
       <form (ngSubmit)="onSubmit()">
         <div class="row">
           <div class="col-md-3">
-            <input type="text" placeholder="Datum hinzufügen" [(ngModel)]="appointment.date" name="date">
+            <input type="text" placeholder="Datepicker" class="form-control" bsDatepicker [bsConfig]="{ dateInputFormat: 'DD.MM.YYYY' }"
+              placeholder="Datum hinzufügen" [(ngModel)]="appointment.date" name="date">
           </div>
           <div class="col-md-3">
             <input type="text" placeholder="Beschreibung hinzufügen" [(ngModel)]="appointment.content" name="content">
