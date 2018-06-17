@@ -48,6 +48,10 @@ export class TermineComponent implements OnInit, DoCheck {
     }
   }
 
+  refresh() {
+    location.reload();
+  }
+
   onSubmit() {
     if (this.appointment.date != null && this.appointment.content != '' && this.appointment.time != '') {
       this.appointmentService.addItem(this.appointment);
