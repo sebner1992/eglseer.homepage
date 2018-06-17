@@ -25,4 +25,13 @@ export class AuthenticationService {
     return this.user;
   }
 
+  isLoggedIn() {
+    if (this.afAuth.auth.currentUser != null) {
+      return true;
+    }
+    else {
+      return null;
+    }
+  }
+
 }

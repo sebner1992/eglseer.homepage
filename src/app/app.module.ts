@@ -7,6 +7,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { environment } from '../environments/environment';
 
 import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFirestore, AngularFirestoreDocument} from 'angularfire2/firestore';
@@ -21,6 +22,7 @@ import { AuthenticationGuard } from './services/authenticationGuard.service';
 import { AuthenticationService } from './services/authentication.service';
 import { ImageService } from './services/image.service';
 import { UploadService } from './services/upload.service';
+import { AppointmentService } from './services/appointment.service';
 
 import { appRoutes } from '../routes';
 import { Globals } from './globals/globals';
@@ -78,13 +80,15 @@ import { NewsComponent } from './news/news.component';
     AlertModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [
     AuthenticationGuard,
     AuthenticationService,
     ImageService,
     UploadService,
+    AppointmentService,
     AngularFirestore,
     Globals
     ],

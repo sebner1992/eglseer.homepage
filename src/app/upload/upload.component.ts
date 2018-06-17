@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UploadService } from '../services/upload.service';
+import { ImageService } from '../services/image.service';
 import { Upload } from '../models/upload.model';
 import { Globals } from '../globals/globals';
 import * as _ from 'lodash';
@@ -31,7 +32,7 @@ export class UploadComponent {
   imageUrl: string;
   isUrlValid: boolean = false;
 
-  constructor(private uploadService: UploadService, public globals: Globals) {
+  constructor(private uploadService: UploadService, public globals: Globals, private imageService: ImageService) {
   }
 
   handleImages(event) {
@@ -62,6 +63,9 @@ export class UploadComponent {
     }
   }
 
+  delete() {
+    this.imageService.cleanUp();
+  }
 
   changeEvent(event: string) {
     this.selectedEvent = event;

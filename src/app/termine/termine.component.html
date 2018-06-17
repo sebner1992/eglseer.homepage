@@ -2,108 +2,39 @@
   <div class="jumbotron">
     <h1>Termine</h1>
     <div class="row">
-      <h3>Das Eglseerjahr 2018</h3>
-      <ul class="list-group">
-        <li class="list-group-item">
-          <b>März 2018</b>
-          <ul>
-            <li>
-              Jugend/tanzt: 13.März VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Jugend/tanzt: 20.März VS Vorderfager 20.00 Uhr
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <b>April 2018</b>
-          <ul>
-            <li>
-              Singen, tanzen, Spielen: 8.April VS Vorderfager 10.00 Uhr
-            </li>
-            <li>
-              Singen, tanzen, Spielen: 15.April VS Vorderfager 10.00 Uhr
-            </li>
-            <li>
-              Singen, tanzen, Spielen: 29.April VS Vorderfager 10.00 Uhr
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <b>Mai 2018</b>
-          <ul>
-            <li>
-              Singen, tanzen, Spielen: 6.Mai VS Vorderfager 10.00 Uhr
-            </li>
-            <li>
-              Maibaumsetzen: 10.Mai GH Die Ramsau 13.00 Uhr
-            </li>
-            <li>
-              Ersatztermin Maibaumsetzen: 12.Mai GH Die Ramsau 13.00 Uhr
-            </li>
-            <li>
-              Eglseer Ausflug Steiermark: 19.-21.Mai Gemeindezentrum 8.00 Uhr Abfahr
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <b>September 2018</b>
-          <ul>
-            <li>
-              Erntedank Elsbethen: 9.September Gemeindezentrum 8.45 Uhr
-            </li>
-            <li>
-              Brauchtumstag: 30.Septembe Schwaitl 9.45 Uhr
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <b>November 2018</b>
-          <ul>
-            <li>
-              Eglseer Kathreintanz: 24.November GH Die Ramsau 20.00 Uhr
-            </li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <b>Erledigte Termine 2018</b>
-          <ul>
-            <li>
-              Tanzprobe: 10.Jänner VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Dankgottesdienst und Feier v. Pfarrer Roland Kerschbaum: 14.Jänner Pfarrkirche Elsbethen 9.00 Uhr
-            </li>
-            <li>
-              Ausschusssitzung: 17.Jänner bei Hannes 20.00 Uhr
-            </li>
-            <li>
-              Tanzprobe: 31.Jänner VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Tanzprobe: 7.Februar VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Jahreshauptversammlung: 18.Februar GH Mitteregg 10.15 Uhr
-            </li>
-            <li>
-              Jugend/tanzt: 20.Februar VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Stockschiaß- und Ripperlpartie: 24.Februar GH Die Ramsau 18.00 Uhr
-            </li>
-            <li>
-              Jugend/tanzt: 27.Februar VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Plattleraufnahmen: 27.Februar VS Vorderfager 20.00 Uhr
-            </li>
-            <li>
-              Jugend/tanzt: 6.März VS Vorderfager 20.00 Uhr
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <table>
+        <tr>
+          <th>Datum</th>
+          <th>Veranstaltung</th>
+          <th>Uhrzeit</th>
+          <th *ngIf="loggedIn">Löschen</th>
+        </tr>
+        <tr *ngFor="let appointment of appointments">
+          <td>{{appointment.date}}</td>
+          <td>{{appointment.content}}</td>
+          <td>{{appointment.time}}</td>
+          <td *ngIf="loggedIn"><button type="button" (click)="deleteItem($event, appointment)">Löschen</button></td>
+        </tr>
+      </table>
+    </div>
+    <hr *ngIf="loggedIn">
+    <div class="row" *ngIf="loggedIn">
+      <form (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-3">
+            <input type="text" placeholder="Datum hinzufügen" [(ngModel)]="appointment.date" name="date">
+          </div>
+          <div class="col-md-3">
+            <input type="text" placeholder="Beschreibung hinzufügen" [(ngModel)]="appointment.content" name="content">
+          </div>
+          <div class="col-md-3">
+            <input type="text" placeholder="Uhrzeit hinzufügen" [(ngModel)]="appointment.time" name="time">
+          </div>
+          <div class="col-md-3">
+            <input type="submit" value="Neuen Termin hinzufügen" class="btn">
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
